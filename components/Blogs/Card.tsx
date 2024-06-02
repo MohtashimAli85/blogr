@@ -16,7 +16,7 @@ const Card: React.FC<Blog> = ({ id, title, description, category }) => {
             <IconArrowUpRight />
           </h2>
         </Link>
-        <p className='text-gray-500'>{description}</p>
+        <p className='text-gray-500 line-clamp-3'>{description}</p>
       </div>
     </div>
   );
