@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 const Blog = async ({ params: { id } }: { params: { id: string } }) => {
   const blog = await getBlog(id);
   return (
-    <div className='max-w-4xl mx-auto px-3 space-y-4  py-2 sm:py-5'>
+    <div className='max-w-4xl mx-auto px-4 space-y-4  py-2 sm:py-5'>
       <div className='space-y-2'>
         <div className='h-[240px] relative shadow'>
           <Image
