@@ -1,5 +1,6 @@
 import { getBlog, getBlogs } from '@/firebase/blogs';
 import Image from 'next/image';
+import Markdown from 'react-markdown';
 
 export async function generateStaticParams() {
   const blogs = await getBlogs();
@@ -30,7 +31,7 @@ const Blog = async ({ params: { id } }: { params: { id: string } }) => {
         </h1>
         <h2 className='text-gray-500 text-sm ml-2'>{blog?.category}</h2>
       </div>
-      <p className='ml-2'>{blog?.description}</p>
+      <Markdown>{blog?.content}</Markdown>
     </div>
   );
 };
