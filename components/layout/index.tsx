@@ -8,6 +8,7 @@ const Layout: React.FC<Children> = ({ children }) => {
         <nav className='flex gap-3 sm:justify-end underline underline-offset-2  p-4 max-w-7xl mx-auto'>
           <Link href='/'>Home</Link>
           <Link href='/about'>About</Link>
+          <Link href='/nextjs-api'>API</Link>
         </nav>
       </div>
       {children}
