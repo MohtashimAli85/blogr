@@ -11,12 +11,14 @@ const Card: React.FC<Blog> = ({ id, title, description, category }) => {
       <div className='space-y-3'>
         <p className='text-sm text-blue-950'>{category}</p>
         <Link href={`/${id}`} className=''>
-          <h2 className='font-semibold text-2xl flex justify-between gap-1 items-center'>
-            <span className='text-nowrap w-fit truncate'>{title}</span>
+          <h2 className='font-semibold w-fit text-base sm:text-xl md:text-2xl flex justify-between gap-1 items-center'>
+            <span className=''>{title}</span>
             <IconArrowUpRight />
           </h2>
         </Link>
-        <p className='text-gray-500 line-clamp-3'>{description}</p>
+        <p className='text-gray-500 text-sm sm:text-base line-clamp-3'>
+          {description}
+        </p>
       </div>
     </div>
   );
