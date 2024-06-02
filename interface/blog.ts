@@ -4,4 +4,5 @@ export interface Blog {
   title: string;
   description: string;
   category: string;
+  content: string;
 }
